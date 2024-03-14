@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+public class March10C {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            String s = sc.next();
+            if (s.length() <= 10) {
+                System.out.println(s);
+            } else {
+                int m = s.length();
+                int n = m - 2;
+                String b = String.valueOf(n);
+                char[] ch = s.toCharArray();
+                char first = ch[0];
+                char second = ch[ch.length - 1];
+                System.out.println(first + b + second);
+            }
+        }
+    }
+}
