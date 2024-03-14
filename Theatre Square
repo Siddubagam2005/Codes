@@ -1,0 +1,14 @@
+import java.util.*;
+ 
+public class March14 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextInt();
+        long m = sc.nextInt();
+        long l = sc.nextInt();
+        long a = (m + l - 1) / l;
+        long b = (n + l - 1) / l;
+ 
+        System.out.println(a * b);
+    }
+}
