@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       String str1 = sc.nextLine().replaceAll("\\s+", "");
+       String str2 = sc.nextLine().replaceAll("\\s+", "");
+       String str3 = str1.concat(str2);
+        char c[]=str3.toCharArray();
+        StringBuilder sb=new StringBuilder();
+        Set<Character> seen = new HashSet<>();
+        for(char m:c){
+            if(!seen.contains(m)){
+                seen.add(m);
+                sb.append(m);
+            }
+        }
+        String str4=sb.toString();
+        char cc[]=str4.toCharArray();
+        Arrays.sort(cc);
+       String s=String.join("",String.valueOf(cc));
+       StringBuilder sb1=new StringBuilder(s);
+       sb1.reverse();
+       System.out.println(sb1.toString());
+        }
+        }
+    input:fruits
+         are good
+
+    output:-
+        utsroigfeda
+        
