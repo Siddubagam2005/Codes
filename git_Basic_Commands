@@ -1,0 +1,14 @@
+
+C:\Users\SIDDU>git --version
+git version 2.50.1.windows.1
+
+C:\Users\SIDDU>git config
+error: no action specified
+
+C:\Users\SIDDU>git config --global user.name "siddu"
+
+C:\Users\SIDDU>git config --global user.mail siddu@gmail.com
+
+C:\Users\SIDDU>git config --global --list
+user.name=siddu
+user.mail=siddu@gmail.com
